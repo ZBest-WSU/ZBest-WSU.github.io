@@ -2,8 +2,8 @@
 @import url('font/font.css');
 
 :root{
-   --yellow: #ffd200;
-   --hover: #e3a700;
+   --yellow: #e7c400;
+   --hover: #d49b00;
    --grey: #2b2b2b;
    --dark: #1f1f1f;
    --light: #4d4d4d;
@@ -58,11 +58,15 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-decoration: none;
+    color: white;
 } a:hover {
     text-decoration: underline;
     text-decoration-color: #ffd200;
 }
-
+li { margin-bottom: 5px;
+} li a {
+    color: white;
+ }
 .content-wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -90,6 +94,8 @@ a {
     color: black !important;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+} .container h2 {
+    text-shadow: var(--light) .5px .5px 2px;
 }
 .grid {
     display:grid;
@@ -105,9 +111,9 @@ a {
     border-width: 10px;
     border-color: white;
     border-radius: 10px;
-    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.01);
+    box-shadow: var(--light) .5px .5px 2px;
     box-sizing: border-box;
-    max-width: 150px;
+    max-width: 160px;
 }
 .footer {
     background-color: var(--grey);
@@ -116,9 +122,7 @@ a {
     padding: 15px;
     margin-top: 20px;
 }
-ul {
-    flex: column;
-}
+
 caption {
     color: black;
     font-size: 1em;
@@ -129,10 +133,8 @@ main {
     max-width: 1100px;
     color: white;
     padding: 15px;
-    min-height: 69vh;
-
+    min-height: 55vh;
 }
-
 
 /* Dark Mode Toggle Styles */
 .theme-toggle {
