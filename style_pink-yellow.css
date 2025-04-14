@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: #000000;
 }   h1 { font-size: 2em; }
     h2 { font-size: 1.6em; }
-    h3 { font-size: 1.4em; }
+    h3 { font-size: 1.4em;  font-weight: 400; }
     
 .navbar {
     background-color: var(--pink);
